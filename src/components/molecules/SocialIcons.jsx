@@ -1,4 +1,4 @@
-import { iconsData } from "../../data/contsants";
+import { iconsData } from "../../data/constants";
 
 function SocialIcons({ render, header, children }) {
   if (header)

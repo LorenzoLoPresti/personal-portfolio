@@ -1,4 +1,8 @@
-import { projectCategories } from "./contsants";
+export const projectCategories = {
+  advanced: "advanced",
+  didactical: "didactical",
+  other: "other",
+};
 
 export const projects = [
   {
@@ -212,5 +216,27 @@ export const projects = [
     imgUrl:
       "https://raw.githubusercontent.com/LorenzoLoPresti/images/main/spotify-clone-react-app/image1.png",
     link: "https://github.com/LorenzoLoPresti/spotify-clone-react-app",
+  },
+  {
+    id: 12,
+    category: projectCategories.advanced,
+    title: "Fast react pizza",
+    description: {
+      short: "Food delivery app",
+      long: {
+        body: `Un ipotetico servizio di pizza delivery. L'utente può inserire nel carrello le pizze che preferisce, fornisce il suo indirizzo ed effettua l'ordine. Potrà anche verificare lo stato del suo ordine inserendo il codice d'ordine fornito all'acquisto.`,
+        stack: [
+          "Vite",
+          "React",
+          "Javascript",
+          "React-router-DOM",
+          "Tailwind",
+          "Redux & RTK",
+        ],
+      },
+    },
+    imgUrl:
+      "https://raw.githubusercontent.com/LorenzoLoPresti/images/main/fast-react-pizza/image1.png",
+    link: "https://github.com/LorenzoLoPresti/fast-react-pizza",
   },
 ];
