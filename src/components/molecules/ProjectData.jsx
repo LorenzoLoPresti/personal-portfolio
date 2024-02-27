@@ -2,8 +2,30 @@ import { Col } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import Text from "../atoms/Text";
 import { Github } from "react-bootstrap-icons";
+import { useEffect } from "react";
 
 function ProjectData({ title, description, id, numOfProjects, link }) {
+  const navigate = useNavigate();
+  const movePrev = id - 1 >= 1 ? id - 1 : numOfProjects;
+  const moveForward = id + 1 <= numOfProjects ? id + 1 : 1;
+
+  useEffect(
+    function () {
+      function handleKeyUp(e) {
+        if (e.key === "ArrowLeft") navigate(`/project/${movePrev}`);
+        if (e.key === "ArrowRight") navigate(`/project/${moveForward}`);
+        if (e.key === "Escape") {
+          navigate("/");
+        }
+      }
+
+      document.addEventListener("keyup", handleKeyUp);
+
+      return () => document.removeEventListener("keyup", handleKeyUp);
+    },
+    [navigate, moveForward, movePrev]
+  );
+
   return (
     <Col
       xs="12"
@@ -15,7 +37,7 @@ function ProjectData({ title, description, id, numOfProjects, link }) {
         description={description}
         link={link}
       />
-      <ProjectData.NavButtons id={id} numOfProjects={numOfProjects} />
+      <ProjectData.NavButtons movePrev={movePrev} moveForward={moveForward} />
       <ProjectData.Body description={description} />
       <ProjectData.BackButton />
     </Col>
@@ -33,19 +55,13 @@ function Heading({ title, link }) {
   );
 }
 
-function NavButtons({ id, numOfProjects }) {
+function NavButtons({ movePrev, moveForward }) {
   return (
     <div className="mt-3">
-      <Link
-        to={`/project/${id - 1 >= 1 ? id - 1 : numOfProjects}`}
-        className="me-3 proj-nav-buttons"
-      >
+      <Link to={`/project/${movePrev}`} className="me-3 proj-nav-buttons">
         <span className="me-2">&larr;</span> prev
       </Link>
-      <Link
-        to={`/project/${id + 1 <= numOfProjects ? id + 1 : 1}`}
-        className="proj-nav-buttons"
-      >
+      <Link to={`/project/${moveForward}`} className="proj-nav-buttons">
         next <span className="ms-2">&rarr;</span>
       </Link>
     </div>
