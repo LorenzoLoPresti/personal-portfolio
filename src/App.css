@@ -530,6 +530,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-decoration: none;
 }
 
+.proj-back-button,
+.proj-nav-buttons {
+  transition: all 0.5s;
+}
+
+.proj-nav-buttons,
+.proj-back-button {
+  color: white;
+  text-decoration: none;
+}
+.proj-nav-buttons:hover,
+.proj-back-button:hover {
+  color: #aa367c;
+}
+
+.proj-back-button:hover {
+  transform: translate(-10px);
+}
+
 /************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);

@@ -2,7 +2,6 @@ import { Col } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import Text from "../atoms/Text";
 import { Github } from "react-bootstrap-icons";
-import { useEffect, useRef } from "react";
 
 function ProjectData({ title, description, id, numOfProjects, link }) {
   return (
@@ -16,9 +15,9 @@ function ProjectData({ title, description, id, numOfProjects, link }) {
         description={description}
         link={link}
       />
+      <ProjectData.NavButtons id={id} numOfProjects={numOfProjects} />
       <ProjectData.Body description={description} />
       <ProjectData.BackButton />
-      <ProjectData.NavButtons id={id} numOfProjects={numOfProjects} />
     </Col>
   );
 }
@@ -36,20 +35,20 @@ function Heading({ title, link }) {
 
 function NavButtons({ id, numOfProjects }) {
   return (
-    <>
+    <div className="mt-3">
       <Link
         to={`/project/${id - 1 >= 1 ? id - 1 : numOfProjects}`}
-        className="text-light"
+        className="me-3 proj-nav-buttons"
       >
-        prev
+        <span className="me-2">&larr;</span> prev
       </Link>
       <Link
         to={`/project/${id + 1 <= numOfProjects ? id + 1 : 1}`}
-        className="text-light"
+        className="proj-nav-buttons"
       >
-        next
+        next <span className="ms-2">&rarr;</span>
       </Link>
-    </>
+    </div>
   );
 }
 
@@ -84,7 +83,7 @@ function BackButton() {
 
   return (
     <button
-      className="text-light position-absolute top-0 end-0 me-2 me-sm-0"
+      className="position-absolute top-0 end-0 me-2 me-sm-0 proj-back-button"
       onClick={() => navigate("/")}
     >
       &larr; back
