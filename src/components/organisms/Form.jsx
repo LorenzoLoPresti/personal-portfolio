@@ -15,7 +15,7 @@ function Form() {
   } = useForm();
 
   return (
-    <section id="contact">
+    <section>
       <Text as="h2">Get in touch</Text>
       <form onSubmit={handleSubmit}>
         <Row className="position-relative">

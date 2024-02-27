@@ -16,9 +16,7 @@ function Footer() {
       </Col>
       <Col sm={6} className="text-center text-sm-end mt-3 mt-sm-0">
         <SocialIcons
-          render={(options) => (
-            <SocialIcon {...options} key={options.linkAlt} />
-          )}
+          render={(options) => <SocialIcon {...options} key={options.alt} />}
         />
       </Col>
       <Text className="text-center text-sm-end">

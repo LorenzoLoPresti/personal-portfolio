@@ -1,27 +1,4 @@
-import navIcon1 from "../../assets/img/nav-icon1.svg";
-import navIcon2 from "../../assets/img/nav-icon2.svg";
-import navIcon3 from "../../assets/img/nav-icon3.svg";
-
-const iconsData = [
-  {
-    href: "#",
-    alt: "dew",
-    linkAlt: "dew",
-    image: navIcon1,
-  },
-  {
-    href: "#",
-    alt: "dew",
-    linkAlt: "dewa",
-    image: navIcon2,
-  },
-  {
-    href: "#",
-    alt: "dew",
-    linkAlt: "dewaa",
-    image: navIcon3,
-  },
-];
+import { iconsData } from "../../data/contsants";
 
 function SocialIcons({ render, header, children }) {
   if (header)

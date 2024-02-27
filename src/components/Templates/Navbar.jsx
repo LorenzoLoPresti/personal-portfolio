@@ -27,9 +27,7 @@ export function NavBar() {
           />
           <SocialIcons
             header
-            render={(options) => (
-              <SocialIcon key={options.linkAlt} {...options} />
-            )}
+            render={(options) => <SocialIcon key={options.alt} {...options} />}
           >
             <Nav.Link
               href="#contact"

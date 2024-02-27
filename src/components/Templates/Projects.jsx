@@ -15,9 +15,9 @@ function Projects() {
           accusantium recusandae facilis?
         </TextBlock>
         <Pills
-          render={(project, i) => (
-            <Card key={i} {...project}>
-              {project.description}
+          render={(project) => (
+            <Card key={project.id} {...project}>
+              {project.description.short}
             </Card>
           )}
         />

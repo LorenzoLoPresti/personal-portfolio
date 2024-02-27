@@ -5,6 +5,7 @@ import Projects from "../Templates/Projects";
 import Contact from "../Templates/contact";
 import Footer from "../Templates/Footer";
 import GoUp from "../molecules/GoUp";
+import { Outlet } from "react-router-dom";
 
 function AppLayout() {
   return (
@@ -12,7 +13,8 @@ function AppLayout() {
       <NavBar />
       <HeadingSection />
       <Skills />
-      <Projects />
+      {/* <Projects /> */}
+      <Outlet />
       <Contact />
       <Footer />
       <GoUp />
