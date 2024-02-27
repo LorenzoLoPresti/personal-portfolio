@@ -3,7 +3,12 @@ import { useEffect, useState } from "react";
 export function useHeadingAnimation(period) {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Web Developer", "Web Designer", "UX/UI Designer"];
+  const toRotate = [
+    "Web Developer",
+    "React Developer",
+    "Martial artist",
+    "Movie lover",
+  ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
 

@@ -20,7 +20,9 @@ function Projects() {
   return (
     <Section className="project" id="projects">
       <Col>
-        <TextBlock headingText="Projects">{tabs[descriptionIndex]}</TextBlock>
+        <TextBlock headingText="Projects" textClassNames="mb-5">
+          {tabs[descriptionIndex]}
+        </TextBlock>
         <Pills
           tabs={tabs}
           setDescriptionIndex={setDescriptionIndex}

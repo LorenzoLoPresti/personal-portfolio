@@ -1,25 +1,46 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../../assets/img/meter1.svg";
-import meter2 from "../../assets/img/meter2.svg";
-import meter3 from "../../assets/img/meter3.svg";
+import html from "../../assets/img/skills/HTML.svg";
+import css from "../../assets/img/skills/CSS.svg";
+import js from "../../assets/img/skills/JavaScript.svg";
+import react from "../../assets/img/skills/React.svg";
+import tailwind from "../../assets/img/skills/Tailwind.svg";
+import bootstrap from "../../assets/img/skills/Bootstrap.svg";
+import java from "../../assets/img/skills/Java.svg";
+import spring from "../../assets/img/skills/Spring.svg";
 
 const carouselData = [
   {
-    image: meter1,
-    label: "Web Development",
+    image: js,
+    label: "Javascript",
   },
   {
-    image: meter2,
-    label: "Brand Identity",
+    image: react,
+    label: "React",
   },
   {
-    image: meter3,
-    label: "Logo Design",
+    image: tailwind,
+    label: "Tailwind",
   },
   {
-    image: meter1,
-    label: "Web Development",
+    image: bootstrap,
+    label: "Bootstrap",
+  },
+  {
+    image: java,
+    label: "Java",
+  },
+  {
+    image: spring,
+    label: "Springboot",
+  },
+  {
+    image: html,
+    label: "HTML",
+  },
+  {
+    image: css,
+    label: "CSS",
   },
 ];
 

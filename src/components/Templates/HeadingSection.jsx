@@ -18,14 +18,13 @@ function HeadingSection() {
         <Jumbotron.Tagline>Welcome to my portfolio</Jumbotron.Tagline>
 
         <Jumbotron.TextBlock name="Lorenzo" animatedText={animatedText}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sed
-          voluptas quisquam molestias dignissimos dicta reiciendis consectetur
-          ipsam illum. Dolores corrupti ex cum quisquam laboriosam ut recusandae
-          unde soluta. Distinctio.
+          Junior full-stack developer che sta cercando di specializarsi nel
+          frontend con React e Typescript e che cerca di rispondere alla
+          domanda: a 30 e più anni si può cambiare vita in italia?
         </Jumbotron.TextBlock>
 
         <a href="#contact" className="d-inline-block text-decoration-none">
-          <Button onClick={() => console.log("Lets connect")}>
+          <Button>
             Let's connect <ArrowRightCircle size={25} />
           </Button>
         </a>

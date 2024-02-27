@@ -19,9 +19,24 @@ function Footer() {
           render={(options) => <SocialIcon {...options} key={options.alt} />}
         />
       </Col>
-      <Text className="text-center text-sm-end">
-        &copy;CopyRight {currentYear}. All Right Reserved
-      </Text>
+      <div className="d-block mt-4 mt-md-0 d-md-flex justify-content-between align-items-end">
+        <div>
+          <p className="svg-ref text-center">
+            *Programming language svg taken from{" "}
+            <a
+              href="http://www.onlinewebfonts.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Web Fonts
+            </a>{" "}
+            is licensed by CC BY 4.0
+          </p>
+        </div>
+        <Text className="text-center">
+          &copy;Copyright LorenzoLoPresti {currentYear}. All Right Reserved
+        </Text>
+      </div>
     </Section>
   );
 }

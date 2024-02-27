@@ -11,9 +11,12 @@ function Skills() {
       <Col>
         <div className="skill-bx">
           <TextBlock headingText="Skills">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis porro
-            ut expedita, nam pariatur neque nostrum dolor asperiores saepe
-            sequi? Ipsam in optio iste fugit ab, sequi alias totam deleniti.
+            Ho iniziato a studiare la programmazione frequentando il bootcamp
+            Epicode, che mi ha dato modo di imparare a utilizzare Javascript,
+            Bootstrap, React, Redux, Java e Spring. Successivamente ho studiato
+            in modo molto più approfondito React e Javascript e ho lavorato
+            qualche mese in agenzia di comunicazione come frontender con lo
+            stack React, Typescript e TailwindCSS.
           </TextBlock>
 
           <SkillCarousel

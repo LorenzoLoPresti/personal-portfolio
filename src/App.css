@@ -27,6 +27,18 @@ html {
   scroll-padding-top: 75px;
 }
 
+body::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4a2fbd; /* color of the scroll thumb */
+}
+
 body {
   font-weight: 400;
   overflow-x: hidden;
@@ -359,6 +371,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 50%;
   margin: 0 auto 15px auto;
 }
+
 .background-image-left {
   top: 28%;
   position: absolute;
@@ -706,6 +719,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+.footer .svg-ref {
+  font-size: 8px;
+}
+
+.footer .svg-ref a {
+  text-decoration: none;
+  color: #aa367c;
 }
 
 .loader {
