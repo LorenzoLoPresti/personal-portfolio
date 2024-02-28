@@ -6,8 +6,8 @@ export function useHeadingAnimation(period) {
   const toRotate = [
     "Web Developer",
     "React Developer",
-    "Martial artist",
-    "Movie lover",
+    "Martial Artist",
+    "Movie Lover",
   ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
