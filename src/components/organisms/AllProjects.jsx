@@ -1,8 +1,8 @@
 import { Col } from "react-bootstrap";
 import TextBlock from "../molecules/TextBlock";
-import Pills from "../organisms/Pills";
+import Pills from "./Pills";
 import Card from "../molecules/Card";
-import Section from "../organisms/Section";
+import Section from "./Section";
 import { useState } from "react";
 import { tabs } from "../../data/constants";
 
