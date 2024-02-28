@@ -1,10 +1,10 @@
-import NavBar from "../Templates/Navbar";
-import HeadingSection from "../Templates/HeadingSection";
-import Skills from "../Templates/Skills";
-import Footer from "../Templates/Footer";
+import NavBar from "../templates/Navbar";
+import HeadingSection from "../templates/HeadingSection";
+import Skills from "../templates/Skills";
+import Footer from "../templates/Footer";
 import GoUp from "../molecules/GoUp";
 import { Outlet } from "react-router-dom";
-import Contact from "../Templates/contact";
+import Contact from "../templates/Contact";
 
 function AppLayout() {
   return (
