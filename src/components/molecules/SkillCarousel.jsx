@@ -3,6 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import html from "../../assets/img/skills/HTML.svg";
 import css from "../../assets/img/skills/CSS.svg";
 import js from "../../assets/img/skills/JavaScript.svg";
+import ts from "../../assets/img/skills/Typescript.svg";
 import react from "../../assets/img/skills/React.svg";
 import tailwind from "../../assets/img/skills/Tailwind.svg";
 import bootstrap from "../../assets/img/skills/Bootstrap.svg";
@@ -13,6 +14,10 @@ const carouselData = [
   {
     image: js,
     label: "Javascript",
+  },
+  {
+    image: ts,
+    label: "Typescript",
   },
   {
     image: react,
