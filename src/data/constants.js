@@ -9,6 +9,15 @@ export const reactProjects = "React projects";
 export const didacticalProjects = "Didactical projects";
 export const otherProjects = "Other projects";
 
+export const tabs = {
+  first:
+    "Progetti in React con Typescript/Javascript più avanzati, realizzati per mettermi alla prova o progetti finali di corsi di approfondimento su React.",
+  second:
+    "Progetti didattici realizzati per cementificare quanto appreso. Per questi progetti ho utilizzato React + Typescript o HTML, CSS e Javascript",
+  third:
+    "Primi progetti in React + Javascript o HTML, CSS e Javascript, realizzati durante vari corsi di approfondimento",
+};
+
 export const projectsTabFilters = {
   [reactProjects]: projects.filter(
     (project) => project.category === projectCategories.advanced
