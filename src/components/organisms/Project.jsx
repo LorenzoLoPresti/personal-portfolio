@@ -8,7 +8,6 @@ function Project() {
   const ref = useRef(null);
 
   const {
-    category,
     description: { long: longDescription, short: shortDescription },
     imgUrl,
     title,
