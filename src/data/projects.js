@@ -128,7 +128,7 @@ export const projects = [
     },
     imgUrl:
       "https://raw.githubusercontent.com/LorenzoLoPresti/images/main/bankist/image1.png",
-    link: "",
+    link: "https://github.com/LorenzoLoPresti/Bankist_website",
   },
   {
     id: 7,

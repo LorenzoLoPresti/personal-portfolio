@@ -1,5 +1,5 @@
 import linkedinIcon from "../assets/img/nav-icon1.svg";
-// import fbIcon from "../assets/img/nav-icon2.svg";
+import githubIcon from "../assets/img/github.svg";
 import instagramIcon from "../assets/img/nav-icon3.svg";
 import { projectCategories, projects } from "./projects";
 
@@ -44,12 +44,12 @@ export const iconsData = [
     linkAlt: "https://www.google.com",
     image: linkedinIcon,
   },
-  // {
-  //   href: "#",
-  //   alt: "dew",
-  //   linkAlt: "dewa",
-  //   image: fbIcon,
-  // },
+  {
+    href: "https://github.com/LorenzoLoPresti",
+    alt: "github social icon",
+    linkAlt: "https://www.google.com",
+    image: githubIcon,
+  },
   {
     href: "https://www.instagram.com/lorenzo_lo_presti91/",
     alt: "instagram social icon",
