@@ -6,7 +6,7 @@ import Section from "../organisms/Section";
 import { useState } from "react";
 import { tabs } from "../../data/constants";
 
-function Projects() {
+function AllProjects() {
   const [descriptionIndex, setDescriptionIndex] = useState("first");
 
   return (
@@ -29,4 +29,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default AllProjects;

@@ -2,7 +2,7 @@ import AppLayout from "./components/pages/AppLayout";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Project from "./components/organisms/Project";
-import Projects from "./components/templates/AllProjects";
+import AllProjects from "./components/templates/AllProjects copy";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<AppLayout />}>
           <Route path="/project/:id" element={<Project />} />
-          <Route path="/" element={<Projects />} />
+          <Route path="/" element={<AllProjects />} />
         </Route>
       </Routes>
     </BrowserRouter>
