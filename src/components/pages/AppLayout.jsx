@@ -1,10 +1,10 @@
-import NavBar from "../templates/Navbar";
-import HeadingSection from "../templates/HeadingSection";
-import Skills from "../templates/Skills";
-import Footer from "../templates/Footer";
 import GoUp from "../molecules/GoUp";
 import { Outlet } from "react-router-dom";
-import Contact from "../templates/Contact";
+import NavBar from "../organisms/Navbar";
+import HeadingSection from "../organisms/HeadingSection";
+import Contact from "../organisms/Contact";
+import Footer from "../organisms/Footer";
+import Skills from "../organisms/Skills";
 
 function AppLayout() {
   return (
