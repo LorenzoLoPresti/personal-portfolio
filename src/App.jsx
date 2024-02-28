@@ -2,7 +2,7 @@ import AppLayout from "./components/pages/AppLayout";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Project from "./components/organisms/Project";
-import Projects from "./components/templates/Projects";
+import Projects from "./components/templates/AllProjects";
 
 function App() {
   return (
